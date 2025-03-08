@@ -9,6 +9,10 @@ on:  # Defines workflow triggers
     branches:
       - '*'   # Triggers on all branches
 
+permissions:
+  contents: read
+  security-events: write  # ✅ Allows CodeQL to upload SARIF results
+
 jobs:  
 
   security_scan:  # Job to perform Static Application Security Testing (SAST)
