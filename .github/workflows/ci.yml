@@ -27,7 +27,7 @@ jobs:
       - name: Initialize CodeQL  # Step 2: Set up CodeQL for security scanning
         uses: github/codeql-action/init@v2
         with:
-          languages: javascript  # Specifies the programming language to analyze
+          languages: javascript, typescript, python  # Specifies the programming language to analyze
 
       - name: Perform CodeQL Analysis  # Step 3: Run the security analysis
         uses: github/codeql-action/analyze@v2
